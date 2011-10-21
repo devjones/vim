@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/usr/local/lib/python2.6/dist-packages/Satchmo-0.9.2-py2.6.egg/product/views'
+let g:netrw_dirhist_2='/home/devx/blabla/test.pdf'
+let g:netrw_dirhist_3='/home/devx/code/rails_projects/sample_app'
