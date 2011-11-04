@@ -52,7 +52,8 @@ syntax enable
 set grepprg=grep\ -nH\ $*
 
 " Who doesn't like autoindent?
-set autoindent
+" set autoindent
+set smartindent
 
 " Spaces are better than a tab character
 set expandtab
@@ -322,6 +323,10 @@ let Tlist_Inc_Winwidth = 0
 let g:rct_completion_use_fri = 1
 "let g:Tex_DefaultTargetFormat = "pdf"
 let g:Tex_ViewRule_pdf = "kpdf"
+
+
+"Less syntax highligting
+au BufNewFile,BufRead *.less set filetype=less
 
 filetype plugin indent on
 syntax on
