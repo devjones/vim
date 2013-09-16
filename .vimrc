@@ -60,9 +60,9 @@ set expandtab
 set smarttab
 
 " Who wants an 8 character tab?  Not me!
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
 
 " Use english for spellchecking, but don't spellcheck by default
 if version >= 700
@@ -93,8 +93,9 @@ set nuw=6
 set backupcopy=yes
 
 "set the backup directory
-set backupdir=~/.vimtmp,.
-set directory=~/.vimtmp,.
+set backup
+set backupdir=~/.vimtmp,~/tmp
+set directory=~/.vimtmp,~/tmp
 
 " allow write to file if you did not use sudo
 cmap w!! %!sudo tee > /dev/null %
@@ -338,3 +339,6 @@ set ofu=syntaxcomplete#Complete
 "Comment out to the autofocus for Tlist
 "let Tlist_GainFocus_On_ToggleOpen = 1
 ":nmap <F3> :TlistToggle<cr>
+
+"Pretty Print JSON
+map <leader>jt <Esc>:%!json_xs -f json -t json-pretty<CR>
